@@ -1,7 +1,66 @@
+/*IMPORTACION DE LA FUENTE DE GOOGLE FONTS (FUENTE: OSWALD) */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 *{
    box-sizing: border-box;
    font-family: "Oswald" , sans-serif ;
    margin: 0;
    pad: 0;
+}
+html{
+    /*PERMITE DESLIZAR CUANDO SE HACE CLICK EN LOS LINKS DEL MENÚ*/
+    scroll-behavior: smooth;
+}
+/* MENU */
+/* CAJITA DEL MENU */
+.contenedor-header{
+    background: #afd69b;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+/* POSICIONA EL CONTENIDO DEL MENU EN EL CENTRO */
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+/* LE DA COLOR Y NEGRITA(Con font-weight) AL LOGO*/
+.contenedor-header header .logo a{
+    font-family:"Oswald",sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #879996;
+    text-decoration: none;
+}
+/* LE POSICION EN FILA A LOS ITEMS DEL MENU*/
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+/* LE DA COLOR A LOS ITEMS*/
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #85aa9f;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+/* LE DA COLOR A LOS ITEMS CUANDO ESTA EL PUNTERO SOBRE ELLOS*/
+.contenedor-header header nav ul li a:hover{
+    color: #fff;
+}
+/* LE DA COLOR AL ICONO DE BARRA*/
+.nav-responsive{
+    background-color: #afd69b;
+    color:azure;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
